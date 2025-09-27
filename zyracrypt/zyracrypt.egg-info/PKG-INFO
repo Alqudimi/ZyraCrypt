@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: zyracrypt
+Version: 2.0.1
+Summary: ZyraCrypt - Enterprise-grade cryptographic library with advanced security features
+Home-page: https://github.com/Alqudimi/ZyraCrypt
+Author: Abdulaziz Alqudimi
+Author-email: contact@alqudimi.tech
+Keywords: cryptography,encryption,security,post-quantum,enterprise
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Cython
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/plain
+Requires-Dist: argon2-cffi>=25.1.0
+Requires-Dist: boto3>=1.40.39
+Requires-Dist: cryptography>=46.0.1
+Requires-Dist: liboqs-python>=0.14.1
+Requires-Dist: pillow>=11.3.0
+Requires-Dist: pqcrypto>=0.3.4
+Requires-Dist: pynacl>=1.6.0
+Requires-Dist: quantcrypt>=1.0.1
+Requires-Dist: requests>=2.32.5
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+ZyraCrypt: Advanced cryptographic library providing enterprise-grade encryption services with post-quantum cryptography, key management, and advanced security features. Developed by Abdulaziz Alqudimi at Alqudimi Technology.
