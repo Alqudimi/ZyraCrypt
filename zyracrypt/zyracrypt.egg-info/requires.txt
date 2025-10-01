@@ -1,9 +1,0 @@
-argon2-cffi>=25.1.0
-boto3>=1.40.39
-cryptography>=46.0.1
-liboqs-python>=0.14.1
-pillow>=11.3.0
-pqcrypto>=0.3.4
-pynacl>=1.6.0
-quantcrypt>=1.0.1
-requests>=2.32.5

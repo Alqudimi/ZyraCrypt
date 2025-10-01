@@ -1,2 +1,0 @@
-[console_scripts]
-zyracrypt = zyracrypt.cli:main

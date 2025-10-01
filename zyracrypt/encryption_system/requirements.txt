@@ -1,7 +1,0 @@
-cryptography
-argon2-cffi
-Pillow
-liboqs-python
-flask
-flask-cors
-
