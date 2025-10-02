@@ -187,16 +187,39 @@ decrypted = manager.decrypt_with_wrapped_key(wrapped_key, encrypted)
 
 ## 📚 Documentation
 
-Comprehensive Arabic documentation is available in the `docs/` folder:
+### 🌟 Comprehensive Arabic Documentation
 
-- **[البداية والتثبيت](docs/01-getting-started.md)** - Getting started guide
-- **[التشفير الأساسي](docs/02-basic-encryption.md)** - Basic encryption usage
-- **[إدارة المفاتيح](docs/03-key-management.md)** - Key management
-- **[الميزات المتقدمة](docs/04-advanced-features.md)** - Advanced features
-- **[التشفير ما بعد الكم](docs/05-post-quantum.md)** - Post-quantum cryptography
-- **[أمثلة عملية](docs/06-examples.md)** - Practical examples
-- **[مرجع API](docs/07-api-reference.md)** - Complete API reference
-- **[أفضل الممارسات الأمنية](docs/08-security-best-practices.md)** - Security best practices
+**Complete documentation in Arabic (العربية) covering every aspect of ZyraCrypt:**
+
+📖 **[Start Here: Arabic Documentation Guide →](docs/README_AR.md)**
+
+The Arabic documentation includes 16 comprehensive guides:
+
+#### 🎯 Quick Start
+- **[00. Index & Navigation](docs/00-index.md)** - Complete documentation index
+- **[01. Getting Started](docs/01-getting-started.md)** - Installation and setup
+- **[02. Basic Encryption](docs/02-basic-encryption.md)** - AES, ChaCha20, RSA, ECDSA
+- **[03. Key Management](docs/03-key-management.md)** - Secure key handling
+
+#### 🚀 Advanced Features  
+- **[04. Advanced Features](docs/04-advanced-features.md)** - Threshold signatures, MPC, side-channel protection
+- **[05. Post-Quantum Crypto](docs/05-post-quantum.md)** - Kyber, Dilithium, hybrid encryption
+- **[06. Practical Examples](docs/06-examples.md)** - Complete real-world implementations
+- **[09. Data Protection](docs/09-data-protection.md)** - Compression, obfuscation, memory handling
+- **[10. Specialized Security](docs/10-specialized-security.md)** - File encryption, steganography, secure deletion
+- **[11. Blockchain Crypto](docs/11-blockchain-crypto.md)** - Block hashing, PoW, transactions
+
+#### 📖 Reference & Support
+- **[07. API Reference](docs/07-api-reference.md)** - Complete API documentation
+- **[08. Security Best Practices](docs/08-security-best-practices.md)** - Security guidelines
+- **[12. Troubleshooting](docs/12-troubleshooting.md)** - Common issues and solutions
+- **[13. FAQ](docs/13-faq.md)** - Frequently asked questions
+
+#### 🛠️ Production
+- **[14. Deployment Guide](docs/14-deployment-guide.md)** - AWS, Docker, Kubernetes
+- **[15. Performance Optimization](docs/15-performance-optimization.md)** - Speed and efficiency tips
+
+**Coverage**: 100+ practical examples | 200+ pages | Every feature documented
 
 ## 🧪 Testing
 
