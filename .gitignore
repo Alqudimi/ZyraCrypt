@@ -147,6 +147,13 @@ cython_debug/
 .DS_Store
 Thumbs.db
 
+# Ruff
+.ruff_cache/
+
+# Replit specific
+.config/
+uv.lock
+
 # Project specific
 test_keystore/
 *.key

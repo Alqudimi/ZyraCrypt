@@ -1,0 +1,29 @@
+# Include documentation and metadata files
+include README.md
+include LICENSE
+include CHANGELOG.md
+include requirements.txt
+include pyproject.toml
+include setup.py
+include setup.cfg
+
+# Include all documentation
+recursive-include docs *.md *.rst *.txt
+
+# Include test files
+recursive-include tests *.py
+
+# Exclude unnecessary files
+global-exclude *.py[cod]
+global-exclude __pycache__
+global-exclude *.so
+global-exclude .DS_Store
+global-exclude *.egg-info
+exclude .gitignore
+prune .git
+prune build
+prune dist
+prune .pytest_cache
+prune .mypy_cache
+prune .ruff_cache
+prune __pycache__

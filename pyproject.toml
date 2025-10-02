@@ -5,55 +5,154 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "zyracrypt"
 version = "2.0.0"
-description = "Enterprise-grade cryptographic library providing advanced encryption services"
-readme = {text = "ZyraCrypt is a comprehensive cryptographic library featuring advanced encryption, post-quantum cryptography, key management, threshold signatures, secure enclaves, and more. Built for enterprise-grade security with modern cryptographic protocols.", content-type = "text/plain"}
-authors = [{name = "Alqudimi Systems"}]
-requires-python = ">=3.10"
+description = "Enterprise-grade cryptographic library providing advanced encryption, post-quantum cryptography, key management, threshold signatures, and secure enclaves"
+readme = "README.md"
+authors = [
+    {name = "Abdulaziz Alqudimi", email = "eng7mi@gmail.com"}
+]
+maintainers = [
+    {name = "Alqudimi Technology", email = "alqudimitechnology@gmail.com"}
+]
+requires-python = ">=3.8"
 license = {text = "MIT"}
-keywords = ["cryptography", "encryption", "security", "post-quantum", "pqc", "key-management", "threshold-signatures"]
+keywords = [
+    "cryptography",
+    "encryption",
+    "security",
+    "post-quantum",
+    "pqc",
+    "key-management",
+    "threshold-signatures",
+    "multi-party-computation",
+    "secure-enclaves",
+    "homomorphic-encryption",
+    "steganography",
+    "blockchain-crypto"
+]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
     "Topic :: Security :: Cryptography",
+    "Topic :: Software Development :: Libraries :: Python Modules",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+    "Typing :: Typed",
 ]
 
 dependencies = [
-    "argon2-cffi>=25.1.0",
-    "cryptography>=46.0.2",
-    "email-validator>=2.3.0",
-    "flask-sqlalchemy>=3.1.1",
-    "flask>=3.1.2",
-    "flask-cors>=6.0.1",
-    "gunicorn>=23.0.0",
-    "liboqs-python>=0.14.1",
-    "pillow>=11.3.0",
-    "psycopg2-binary>=2.9.10",
-    "pynacl>=1.6.0",
-    "setuptools>=80.9.0",
+    "cryptography>=42.0.0",
+    "pynacl>=1.5.0",
+    "argon2-cffi>=23.1.0",
+    "pillow>=10.0.0",
 ]
 
 [project.optional-dependencies]
+# Post-quantum cryptography support
+pqc = [
+    "liboqs-python>=0.10.0",
+]
+
+# Web API for group E2E encryption
+api = [
+    "flask>=3.0.0",
+    "flask-cors>=4.0.0",
+]
+
+# Database support for certain features
+database = [
+    "flask-sqlalchemy>=3.0.0",
+    "psycopg2-binary>=2.9.0",
+]
+
+# Email validation utilities
+email = [
+    "email-validator>=2.0.0",
+]
+
+# Development dependencies
 dev = [
     "pytest>=7.4.0",
     "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+    "build>=1.0.0",
+    "twine>=4.0.0",
+]
+
+# Documentation dependencies
+docs = [
+    "sphinx>=7.0.0",
+    "sphinx-rtd-theme>=1.3.0",
+]
+
+# All optional features
+all = [
+    "liboqs-python>=0.10.0",
+    "flask>=3.0.0",
+    "flask-cors>=4.0.0",
+    "flask-sqlalchemy>=3.0.0",
+    "psycopg2-binary>=2.9.0",
+    "email-validator>=2.0.0",
 ]
 
 [project.urls]
-Source = "https://github.com/yourusername/zyracrypt"
-Documentation = "https://github.com/yourusername/zyracrypt#readme"
+Homepage = "https://github.com/Alqudimi/ZyraCrypt"
+Documentation = "https://github.com/Alqudimi/ZyraCrypt/main/docs"
+Repository = "https://github.com/Alqudimi/ZyraCrypt"
+"Bug Tracker" = "https://github.com/Alqudimi/ZyraCrypt/issues"
+Changelog = "https://github.com/Alqudimi/ZyraCrypt/releases"
 
 [tool.setuptools]
-packages = [
-    "advanced_features",
-    "core_cryptography",
-    "data_protection",
-    "key_management",
-    "post_quantum_cryptography",
-    "specialized_security",
+zip-safe = false
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+    "zyracrypt*",
+    "core_cryptography*",
+    "key_management*",
+    "advanced_features*",
+    "data_protection*",
+    "specialized_security*",
+    "post_quantum_cryptography*",
 ]
+exclude = [
+    "tests*",
+    "docs*",
+    "*.egg-info*",
+    "build*",
+    "dist*",
+]
+
+[tool.setuptools.package-data]
+"*" = ["*.md", "*.txt", "*.rst"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=zyracrypt --cov-report=term-missing"
+
+[tool.black]
+line-length = 100
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+select = ["E", "F", "I", "N", "W"]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false

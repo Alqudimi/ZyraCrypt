@@ -8,7 +8,7 @@
 
 ZyraCrypt is a comprehensive cryptographic library providing enterprise-grade security features including advanced encryption, post-quantum cryptography, key management, threshold signatures, secure enclaves, and more.
 
-## ✨ Features
+## ✄1�7 Features
 
 ### 🔐 Core Encryption
 - **Symmetric Encryption**: AES-256-GCM, ChaCha20-Poly1305
@@ -24,7 +24,7 @@ ZyraCrypt is a comprehensive cryptographic library providing enterprise-grade se
 - Hardware Security Module (HSM) support
 - Threshold key management
 
-### 🛡️ Advanced Security
+### 🛡︄1�7 Advanced Security
 - **Threshold Signatures**: Shamir secret sharing with configurable thresholds
 - **Multi-Signature Schemes**: Collaborative signing protocols
 - **Multi-Party Computation (MPC)**: Secure distributed computations
@@ -215,7 +215,7 @@ The Arabic documentation includes 16 comprehensive guides:
 - **[12. Troubleshooting](docs/12-troubleshooting.md)** - Common issues and solutions
 - **[13. FAQ](docs/13-faq.md)** - Frequently asked questions
 
-#### 🛠️ Production
+#### 🛠︄1�7 Production
 - **[14. Deployment Guide](docs/14-deployment-guide.md)** - AWS, Docker, Kubernetes
 - **[15. Performance Optimization](docs/15-performance-optimization.md)** - Speed and efficiency tips
 
@@ -230,45 +230,45 @@ python test_advanced_features.py
 ```
 
 Test coverage includes:
-- ✅ Envelope Encryption & KMS
-- ✅ Enhanced KDF & Password schemes
-- ✅ Algorithm Agility & Versioning
-- ✅ Threshold Signatures & Multisig
-- ✅ MPC & Secure Enclaves
-- ✅ Side-Channel Resistance
+- ✄1�7 Envelope Encryption & KMS
+- ✄1�7 Enhanced KDF & Password schemes
+- ✄1�7 Algorithm Agility & Versioning
+- ✄1�7 Threshold Signatures & Multisig
+- ✄1�7 MPC & Secure Enclaves
+- ✄1�7 Side-Channel Resistance
 - ⚠️ Hybrid Post-Quantum Cryptography (optional)
 
 **Current Test Results**: 6/7 tests passing (85.7%)
 
-## 🏗️ Project Structure
+## 🏗︄1�7 Project Structure
 
 ```
 zyracrypt/
-├── core_cryptography/       # Core encryption algorithms
-│   ├── encryption_framework.py
-│   ├── symmetric_encryption.py
-│   ├── asymmetric_encryption.py
-│   └── algorithm_agility_versioning.py
-├── key_management/          # Key generation and management
-│   ├── key_manager.py
-│   ├── key_generator.py
-│   ├── envelope_encryption_kms.py
-│   └── enhanced_kdf_password.py
-├── advanced_features/       # Advanced cryptographic features
-│   ├── threshold_multisig_enhanced.py
-│   ├── secure_mpc_enclaves.py
-│   ├── hybrid_pqc_enhanced.py
-│   └── side_channel_protection.py
-├── data_protection/         # Data protection utilities
-│   ├── data_protection_manager.py
-│   ├── compression_unit.py
-│   └── secure_memory_handling.py
-├── specialized_security/    # Specialized security features
-│   ├── file_encryption_manager.py
-│   ├── steganography_unit.py
-│   └── secure_session_manager.py
-└── post_quantum_cryptography/  # Post-quantum algorithms
-    └── post_quantum_cryptography_unit.py
+├─┄1�7 core_cryptography/       # Core encryption algorithms
+┄1�7   ├─┄1�7 encryption_framework.py
+┄1�7   ├─┄1�7 symmetric_encryption.py
+┄1�7   ├─┄1�7 asymmetric_encryption.py
+┄1�7   └─┄1�7 algorithm_agility_versioning.py
+├─┄1�7 key_management/          # Key generation and management
+┄1�7   ├─┄1�7 key_manager.py
+┄1�7   ├─┄1�7 key_generator.py
+┄1�7   ├─┄1�7 envelope_encryption_kms.py
+┄1�7   └─┄1�7 enhanced_kdf_password.py
+├─┄1�7 advanced_features/       # Advanced cryptographic features
+┄1�7   ├─┄1�7 threshold_multisig_enhanced.py
+┄1�7   ├─┄1�7 secure_mpc_enclaves.py
+┄1�7   ├─┄1�7 hybrid_pqc_enhanced.py
+┄1�7   └─┄1�7 side_channel_protection.py
+├─┄1�7 data_protection/         # Data protection utilities
+┄1�7   ├─┄1�7 data_protection_manager.py
+┄1�7   ├─┄1�7 compression_unit.py
+┄1�7   └─┄1�7 secure_memory_handling.py
+├─┄1�7 specialized_security/    # Specialized security features
+┄1�7   ├─┄1�7 file_encryption_manager.py
+┄1�7   ├─┄1�7 steganography_unit.py
+┄1�7   └─┄1�7 secure_session_manager.py
+└─┄1�7 post_quantum_cryptography/  # Post-quantum algorithms
+    └─┄1�7 post_quantum_cryptography_unit.py
 ```
 
 ## 🔒 Security Features
@@ -322,7 +322,7 @@ Built with:
 ## 📞 Support
 
 For questions, issues, or feature requests:
-- Open an issue on [GitHub](https://github.com/yourusername/zyracrypt/issues)
+- Open an issue on [GitHub](https://github.com/Alqudimi/ZyraCrypt/issues)
 - Check the [documentation](docs/)
 - Review the [examples](docs/06-examples.md)
 

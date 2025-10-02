@@ -1,0 +1,14 @@
+# ZyraCrypt - Core Dependencies
+# For installation, use: pip install -r requirements.txt
+# Or use: pip install zyracrypt
+
+cryptography>=42.0.0
+pynacl>=1.5.0
+argon2-cffi>=23.1.0
+pillow>=10.0.0
+
+# Optional dependencies - install separately as needed:
+# pip install zyracrypt[pqc]      # Post-quantum cryptography
+# pip install zyracrypt[api]      # Web API support
+# pip install zyracrypt[all]      # All features
+# pip install zyracrypt[dev]      # Development tools
