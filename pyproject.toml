@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zyracrypt"
+version = "2.0.0"
+description = "Enterprise-grade cryptographic library providing advanced encryption services"
+readme = {text = "ZyraCrypt is a comprehensive cryptographic library featuring advanced encryption, post-quantum cryptography, key management, threshold signatures, secure enclaves, and more. Built for enterprise-grade security with modern cryptographic protocols.", content-type = "text/plain"}
+authors = [{name = "Alqudimi Systems"}]
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["cryptography", "encryption", "security", "post-quantum", "pqc", "key-management", "threshold-signatures"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Security :: Cryptography",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "argon2-cffi>=25.1.0",
+    "cryptography>=46.0.2",
+    "flask>=3.1.2",
+    "flask-cors>=6.0.1",
+    "liboqs-python>=0.14.1",
+    "pillow>=11.3.0",
+    "pynacl>=1.6.0",
+    "setuptools>=80.9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+]
+
+[project.urls]
+Source = "https://github.com/yourusername/zyracrypt"
+Documentation = "https://github.com/yourusername/zyracrypt#readme"
+
+[tool.setuptools]
+packages = [
+    "advanced_features",
+    "core_cryptography",
+    "data_protection",
+    "key_management",
+    "post_quantum_cryptography",
+    "specialized_security",
+]

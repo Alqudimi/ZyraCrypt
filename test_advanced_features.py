@@ -9,9 +9,6 @@ import os
 import time
 import json
 
-# Add the encryption system to Python path
-sys.path.insert(0, 'alqudimi_encryption_system/encryption_system/src')
-
 def test_hybrid_pqc():
     """Test Hybrid Post-Quantum Cryptography"""
     print("=== Testing Hybrid Post-Quantum Cryptography ===")
